@@ -114,8 +114,8 @@
   --gradient-rainbow: linear-gradient(90deg, var(--pt-azul) 0%, var(--pt-azul-brillante) 45%, var(--pt-amarillo) 100%);
 
   /* Glassmorphism */
-  --glass-bg: rgba(255, 255, 255, 0.85);
-  --glass-border: rgba(11, 22, 64, 0.08);
+  --glass-bg: var(--pt-crema);
+  --glass-border: rgba(11, 22, 64, 0.06);
   --glass-blur: blur(10px);
 
   /* Transitions */
@@ -277,7 +277,12 @@ section {
   padding: var(--spacing-4xl) 0;
 }
 
+/* Fondo general blanco; la crema queda para acentos (tarjetas, franjas puntuales) */
 section:nth-child(even) {
+  background-color: var(--color-background);
+}
+
+.section-crema {
   background-color: var(--color-surface-alt);
 }
 
@@ -679,7 +684,7 @@ section:nth-child(even) {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--pt-crema);
+  background-color: var(--color-background);
   padding: var(--spacing-4xl) 0;
   text-align: center;
   position: relative;
@@ -693,7 +698,7 @@ section:nth-child(even) {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('../assets/images/talavera-patterns/patron-talavera-tile-crema.svg');
+  background-image: url('../assets/images/talavera-patterns/patron-talavera-tile-blanco.svg');
   background-size: 240px 240px;
   opacity: 0.45;
   z-index: 0;

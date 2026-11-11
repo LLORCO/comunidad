@@ -94,7 +94,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('../assets/images/talavera-patterns/patron-talavera-tile-crema.svg');
+  background-image: url('../assets/images/talavera-patterns/patron-talavera-tile-blanco.svg');
   background-repeat: repeat;
   background-size: 240px 240px;
   opacity: 0.35;
@@ -495,4 +495,19 @@
 .toc-sidebar a.active {
   background-color: var(--color-primary);
   color: var(--white);
+}
+
+/* Team grid: centered cards, fixed width, works with 1 to n members */
+.grid.team-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 340px));
+  justify-content: center;
+}
+
+.team-member-card h3 {
+  font-size: var(--font-size-xl);
+  line-height: 1.2;
+}
+
+.card.team-member-card {
+  padding: var(--spacing-xl) var(--spacing-lg);
 }
