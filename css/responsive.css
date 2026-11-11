@@ -14,18 +14,7 @@
     font-size: var(--font-size-4xl);
   }
 
-  /* Header & Navigation */
-  .mobile-menu-toggle {
-    display: none;
-  }
-
-  .main-nav {
-    display: block;
-  }
-
-  .mobile-menu {
-    display: none !important;
-  }
+  /* Header & Navigation: el menú completo aparece desde 1024px (ver abajo) */
 
   /* Grid System */
   .grid-md-2 {
@@ -124,6 +113,19 @@
 /* Desktop: 1024px and up
    ========================================================================== */
 @media (min-width: 1024px) {
+  /* Header & Navigation */
+  .mobile-menu-toggle {
+    display: none;
+  }
+
+  .main-nav {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: none !important;
+  }
+
   /* Typography */
   html {
     font-size: 18px;
@@ -384,7 +386,7 @@
   }
 
   .main-nav a {
-    padding: var(--spacing-md) var(--spacing-lg);
+    height: 44px;
   }
 
   /* Remove hover effects on touch devices */
