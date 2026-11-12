@@ -511,3 +511,12 @@
 .card.team-member-card {
   padding: var(--spacing-xl) var(--spacing-lg);
 }
+
+.grid.team-grid{grid-template-columns:repeat(auto-fit,minmax(240px,280px))}
+.member-photo--pendiente{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:var(--spacing-xs);background:var(--pt-crema)}
+.member-iniciales{font-family:var(--font-family-heading);font-style:italic;font-weight:700;font-size:3.5rem;line-height:1;color:var(--color-primary)}
+.member-pendiente-badge{font-size:.75rem;font-weight:var(--font-weight-semibold);letter-spacing:.04em;text-transform:uppercase;color:var(--pt-tinta);background:var(--pt-amarillo);padding:2px 10px;border-radius:var(--radius-full)}
+.grid.team-grid{grid-template-columns:minmax(0,340px);justify-content:center}
+@media (min-width:640px){.grid.team-grid{grid-template-columns:repeat(2,minmax(0,300px))}}
+@media (min-width:1100px){.grid.team-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.team-grid .team-member-card .member-photo{width:160px;height:160px}
